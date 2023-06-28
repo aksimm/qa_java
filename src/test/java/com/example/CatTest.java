@@ -4,13 +4,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
-
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
     @Mock
@@ -22,7 +17,7 @@ public class CatTest {
         cat.getSound();
         String expectedResult = "Мяу";
         String actualResult = cat.getSound();
-        Assert.assertEquals(actualResult, expectedResult);
+        Assert.assertEquals(expectedResult, actualResult);
     }
 
     @Test

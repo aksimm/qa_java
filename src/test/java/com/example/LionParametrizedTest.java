@@ -1,5 +1,4 @@
 package com.example;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,18 +20,9 @@ public class LionParametrizedTest {
                 {"Самка", false}
         };
     }
-
-
-
     @Test
     public void testLionDoesHaveMane() throws Exception {
-    try {
         Lion lion = new Lion(sex);
         Assert.assertEquals(expectedResult, lion.doesHaveMane());
-    } catch (Exception exception) {
-        throw new Exception("Используйте допустимые значения пола животного - самец или самка");
     }
-    }
-
-
 }
